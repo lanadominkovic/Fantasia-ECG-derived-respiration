@@ -1,4 +1,4 @@
-# Establishing Baselines for Deep Learning Approaches in ECG-Derived Respiration Signal Analysis on Fantasia Dataset
+# Comparative Analysis and Deep Learning Approaches for ECG-Derived Respiration Signal Estimation using the Fantasia Dataset
 
 This project aims to establish robust baselines for ECG-derived respiration signal analysis using well-established signal processing methods and compare these with deep learning solutions. The Fantasia dataset, containing long-term ECG recordings from healthy young and elderly subjects, was used for this purpose.
 
