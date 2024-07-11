@@ -21,7 +21,30 @@ This project aims to establish robust baselines for ECG-derived respiration sign
    - **Model Architecture**: Implements a fully convolutional autoencoder network inspired by the U-Net model, comprising convolutional layers, ReLU activations, Batch Normalization, MaxPooling, and up-sampling techniques.
    - **Evaluation**: Describes the preprocessing steps, cross-validation technique, and metrics used for model evaluation.
    - **Results**: Presents the performance results, showing the deep learning method's average validation CC of 0.51 and MSE of 0.046, outperforming 4 out of 6 traditional signal processing algorithms.
+  
+6. **Comparison**:
 
-6. **Conclusion**: Summarizes the findings, emphasizing the effectiveness of the deep learning approach and outlining future work to explore different architectures and datasets for improved results.
+**Mean Cross Correlation (CC)**
+The deep learning method outperforms 4 out of 6 traditional signal processing algorithms:
+- ELF_RSlinB_FMebw_FPt_RDtGC_EHF: by 0.0114 (2.29% improvement)
+- flt_BFi: by 0.1396 (37.7% improvement)
+- flt_Wam: by 0.1228 (31.7% improvement)
+- flt_Wfm: by 0.0615 (13.7% improvement)
 
-This project highlights the potential of deep learning models to surpass traditional methods in complex biosignal analysis tasks, paving the way for improved diagnostic and monitoring capabilities in healthcare.
+The deep learning method falls short of 2 algorithms:
+- ELF_RSlinB_FMeam_FPt_RDtGC_EHF: by 0.0759 (12.9% lower)
+- ELF_RSlinB_FMefm_FPt_RDtGC_EHF: by 0.0453 (8.9% lower)
+
+**Mean Squared Error (MSE)**
+The deep learning method outperforms all 6 traditional signal processing algorithms:
+- ELF_RSlinB_FMeam_FPt_RDtGC_EHF: by 0.0260 (36.1% improvement)
+- ELF_RSlinB_FMebw_FPt_RDtGC_EHF: by 0.0238 (34.1% improvement)
+- ELF_RSlinB_FMefm_FPt_RDtGC_EHF: by 0.0246 (34.8% improvement)
+- flt_BFi: by 0.0379 (45.2% improvement)
+- flt_Wam: by 0.0474 (50.7% improvement)
+- flt_Wfm: by 0.0361 (44.0% improvement)
+
+
+
+7. **Conclusion**: 
+The deep learning approach demonstrates superior performance in reducing error (MSE) across all comparisons and improves correlation (CC) in the majority of cases compared to traditional signal processing methods. This highlights the potential of deep learning models to surpass traditional methods in complex biosignal analysis tasks, paving the way for improved diagnostic and monitoring capabilities in healthcare.
