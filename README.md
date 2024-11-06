@@ -44,7 +44,11 @@ The deep learning method outperforms all 6 traditional signal processing algorit
 - flt_Wam: by 0.0474 (50.7% improvement)
 - flt_Wfm: by 0.0361 (44.0% improvement)
 
+- Baselines can be found here: https://github.com/lanadominkovic/ecg-resp-baselines
 
 
 7. **Conclusion**: 
 The deep learning approach demonstrates superior performance in reducing error (MSE) across all comparisons and improves correlation (CC) in the majority of cases compared to traditional signal processing methods. This highlights the potential of deep learning models to surpass traditional methods in complex biosignal analysis tasks, paving the way for improved diagnostic and monitoring capabilities in healthcare.
+
+
+TODO: Code needs to be refactored and put into this repository, but experiment notebook can be found here: https://github.com/lanadominkovic/ecg_derived_resp_dl/blob/main/notebooks/Fantasia_experiment.ipynb
